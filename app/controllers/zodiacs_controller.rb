@@ -36,7 +36,7 @@ class ZodiacsController < ApplicationController
   end
 
   def scales
-    @prognosticator = "People close to you might be a bit worried about you, Libra. Too much work and socializing might have you feeling less than your usual self, and perhaps even a little feverish and headachy. If so, this is a good day to take time out, stay home, and rest. Don't worry about sabotaging your success. It will continue. Take a break and your body will reward you with greater clarity and concentration."
+    @prediction = "People close to you might be a bit worried about you, Libra. Too much work and socializing might have you feeling less than your usual self, and perhaps even a little feverish and headachy. If so, this is a good day to take time out, stay home, and rest. Don't worry about sabotaging your success. It will continue. Take a break and your body will reward you with greater clarity and concentration."
 
     render 'scales'
   end
@@ -50,11 +50,11 @@ class ZodiacsController < ApplicationController
   def archer
     @prediction = "The high from your recent successes could make you want to purchase luxury items that you used to think were impractical, Sagittarius. This is fine as long as you're discriminating and don't give in to impulse buying. This also isn't a good time to overindulge in food or drink. You should let yourself enjoy your success while still using common sense."
 
-    render 'archer'
+    render 'sagittarius'
   end
 
   def goat
-    prediction = "You could be on a real emotional high today because of your success and that of other household members, Capricorn. Your mind may be buzzing with ideas for future expansion, some of which may not be all that workable. However, you should allow yourself a few flights of fancy. Tomorrow your feet will be back on the ground and you will see things in a more practical light."
+    @prediction = "You could be on a real emotional high today because of your success and that of other household members, Capricorn. Your mind may be buzzing with ideas for future expansion, some of which may not be all that workable. However, you should allow yourself a few flights of fancy. Tomorrow your feet will be back on the ground and you will see things in a more practical light."
 
     render 'goat'
   end
